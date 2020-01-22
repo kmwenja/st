@@ -246,6 +246,9 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,               XK_j,           kscrolldown,    {.i = -1} },
     { MODKEY,               XK_o,           externalpipe,   {.v = openurlcmd } },
     { MODKEY,               XK_d,           externalpipe,   {.v = downloadurlcmd } },
+	{ (ControlMask|ShiftMask), XK_plus,     zoom,           {.f = +1} },
+	{ (ControlMask),        XK_minus,       zoom,           {.f = -1} },
+	{ (ControlMask),        XK_equal,       zoomreset,      {.f = 0} },
 };
 
 /*
