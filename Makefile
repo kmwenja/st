@@ -15,6 +15,9 @@ options:
 	@echo "LDFLAGS = $(STLDFLAGS)"
 	@echo "CC      = $(CC)"
 
+debug: STCFLAGS += -DDEBUG -g
+debug: clean options st
+
 .c.o:
 	$(CC) $(STCFLAGS) -c $<
 
